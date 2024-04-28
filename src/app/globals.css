@@ -3,31 +3,72 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  -ms-overflow-style: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+  height: 0;
+  width: 0;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+p,
+a {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-block-start: 4rem;
+}
+
+a {
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: white;
+  height: 2px;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: 300ms all ease-in-out;
+}
+
+a:hover::after {
+  width: 0;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-block-start: 0.2rem;
+}
+
+#logo {
+  position: fixed;
+  z-index: 500;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
   }
 }
