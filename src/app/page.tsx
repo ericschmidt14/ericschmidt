@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
           );
         })}
       </div>
+      <img src="/work.gif" alt="Work" />
       <p>
         On a more personal note, I&apos;m an avid marathon runner and quite the
         espresso addict.
