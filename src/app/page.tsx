@@ -23,7 +23,11 @@ export default function Home() {
       <p>
         I&apos;m Eric Schmidt, a Nuremberg-based software engineer operating at
         the intersection of design and development to create outstanding digital
-        experiences.
+        experiences – currently working at{" "}
+        <a href="https://como-solution.de" target="_blank">
+          CoMo
+        </a>
+        .
       </p>
       <div className="w-full grid grid-cols-4 lg:grid-cols-8 gap-y-16 place-items-center">
         {logos.map((l) => {
@@ -40,8 +44,8 @@ export default function Home() {
       </div>
       <img src="/work.gif" alt="Work" />
       <p>
-        On a more personal note, I&apos;m an avid marathon runner and quite the
-        espresso addict.
+        On a more personal note, I&apos;m an avid long distance runner and quite
+        the espresso addict.
       </p>
       <p>
         Let&apos;s get in touch! If you would like to work together or just say

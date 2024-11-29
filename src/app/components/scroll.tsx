@@ -22,10 +22,10 @@ export default function Scroll() {
   });
 
   return (
-    <div className="fixed top-0 right-0 z-50 h-full w-[2px]">
+    <div className="fixed top-0 left-0 z-50 w-full h-[2px]">
       <div
-        className="relative top-0 right-0 h-full bg-white"
-        style={{ height: scrolled }}
+        className="relative top-0 left-0 h-full bg-white"
+        style={{ width: scrolled }}
       />
     </div>
   );
