@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <main className="flex gap-16 min-h-screen flex-col px-8 md:px-16 pt-96 pb-48">
       <p>
-        I&apos;m Eric Schmidt, a Nuremberg-based software engineer operating at
-        the intersection of design and development to create outstanding digital
-        experiences – currently working at{" "}
+        Hello! I&apos;m Eric Schmidt, a Nuremberg-based software engineer
+        operating at the intersection of design and development to create
+        outstanding digital experiences. Currently working at{" "}
         <a href="https://como-solution.de" target="_blank">
           CoMo
         </a>

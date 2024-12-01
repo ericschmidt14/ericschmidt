@@ -24,7 +24,7 @@ export default function Scroll() {
   return (
     <div className="fixed top-0 left-0 z-50 w-full h-[2px]">
       <div
-        className="relative top-0 left-0 h-full bg-white"
+        className="relative top-0 left-0 h-full bg-[#F58A07]"
         style={{ width: scrolled }}
       />
     </div>

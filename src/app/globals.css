@@ -5,6 +5,7 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
+  --main-rgb: 245, 138, 7;
 }
 
 html {
@@ -46,10 +47,9 @@ a::after {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: white;
   height: 2px;
   width: 100%;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgb(var(--main-rgb));
   transition: 300ms all ease-in-out;
 }
 
