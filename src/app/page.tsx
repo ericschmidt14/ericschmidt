@@ -21,11 +21,12 @@ export default function Home() {
   return (
     <main className="flex gap-16 min-h-screen flex-col px-8 md:px-16 pt-96 pb-48">
       <p>
-        Hello! I&apos;m Eric Schmidt, a Nuremberg-based software engineer
+        Hello! I&apos;m <i className="font-serif">Eric Schmidt</i>, a
+        Nuremberg-based <i className="font-serif">software engineer</i>{" "}
         operating at the intersection of design and development to create
         outstanding digital experiences. Currently working at{" "}
         <a href="https://como-solution.de" target="_blank">
-          CoMo
+          <i className="font-serif">CoMo</i>
         </a>
         .
       </p>
@@ -44,12 +45,13 @@ export default function Home() {
       </div>
       <img src="/work.gif" alt="Work" />
       <p>
-        On a more personal note, I&apos;m an avid long distance runner and quite
-        the espresso addict.
+        On a more personal note, I&apos;m an avid{" "}
+        <i className="font-serif">long distance runner</i> and quite the{" "}
+        <i className="font-serif">espresso addict</i>.
       </p>
       <p>
         Let&apos;s get in touch! If you would like to work together or just say
-        hi, please feel free to drop me a line.
+        hi, please feel free to <i className="font-serif">drop me a line</i>.
       </p>
       <div className="flex gap-8">
         {contact.map((c) => {
